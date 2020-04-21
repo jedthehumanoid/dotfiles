@@ -15,7 +15,11 @@
 (column-number-mode 1)
 (global-display-line-numbers-mode 1)
 
+(global-auto-revert-mode 1)
+
 (use-package gruvbox-theme :ensure t)
+(use-package markdown-mode :ensure t)
+
 (use-package go-mode
   :ensure t
   :config
@@ -30,6 +34,12 @@
   :ensure t
   :config
   (ivy-mode 1))
+
+(use-package web-mode
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.svelte?\\'" . web-mode)))
+
 
 ;; Put package-selected-packages cruft into another file
 (setq custom-file "~/.emacs.d/package-selected-packages.el")
