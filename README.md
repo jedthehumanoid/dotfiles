@@ -1,14 +1,13 @@
 # dotfiles
 
+Uses GNU Stow
+
 ## Usage
 
 ```bash
-git clone --bare <this-repo> $HOME/.cfg
-alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME' # Also add this to .bashrc
-config config --local status.showUntrackedFiles no
-config checkout
+cd ~
+git clone --bare <this-repo>
+cd dotfiles
+stow tmux # ...
 ```
 
-## Link
-
-https://www.atlassian.com/git/tutorials/dotfiles
