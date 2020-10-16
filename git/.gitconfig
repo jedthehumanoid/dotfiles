@@ -1,0 +1,5 @@
+[includeIf "gitdir:~/kod/jobb/"]
+	path = ~/.gitconfig_jobb
+[includeIf "gitdir:~/kod/hem/"]
+	path = ~/.gitconfig_hem
+	
