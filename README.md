@@ -6,8 +6,8 @@ Uses GNU Stow
 
 ```bash
 cd ~
-git clone --bare <this-repo>
+git clone <this-repo>
 cd dotfiles
-stow tmux # ...
+stow git # or neovim, etc...
 ```
 
